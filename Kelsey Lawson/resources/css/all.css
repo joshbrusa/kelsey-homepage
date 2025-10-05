@@ -1,0 +1,28 @@
+* {
+/* This is to universally define the text for the entire callout.*/ 
+	font-family: Helvetica, Arial, Times New Roman;
+}
+
+body {
+	
+}
+
+h1 {
+	color: seagreen;
+}
+
+p {
+/*You can group certain selectors togetheter instead of invidividually calling them out; SAVES TIME & MAKES YOU CONCISE*/
+	font-size: 18px;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	color: dodgerblue;
+}
+
+/* Thinking about moving forward, the css code shall be sectioned off for the different elements I want to focus on & change */
+/* Add list that adds more skills as you scroll thru the project = checks them off or adds to the list */

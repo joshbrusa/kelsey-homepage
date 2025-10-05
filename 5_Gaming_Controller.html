@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Gaming Controller</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="icon" 
+      		type="image/png" 
+      		href="http://kelseylawson.com/favicon.png">
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/icon.png" alt="" /></span><span class="title">Kelsey Lawson</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="CAD.html">CAD Files</a></li>
+							<li><a href="about_me.html">About Me</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Gaming Controller for a Virtual Robot Vehicle</h1>
+
+							<p style="text-align: justify">At the start of the pandemic, I had enrolled in a <b>Mechanical Systems Laboratory</b> course which focused on experiments in linear systems, including op-amp circuits, vibrations, and control systems. The main project in this class emphasized demonstrating that mathematical models can be useful tools for the analysis and design of electro-mechanical systems formed into a controllable robot. However, since our class could no longer meet in person, my professor had restructured the class into two parts: (a) design the robot using SolidWorks and simulate the controls (b) using a private server of <a href="https://en.wikipedia.org/wiki/Agar.io" target="_blank"><b>Agar.io</b></a> individually build a controller to compete against classmates.</p>
+
+							<p style="text-align: justify">In the first part of the class, I was partnered with 3 other students to design, simulate and then present our concept of the robot. The main requirement was to position the required components within the model under the dimensions of a 16" height and 12" width, not including the piston's extension. For my team’s design, I had suggested that we keep all of the components on the base of the platform to keep the weight evenly distributed so during turns it wouldn't tip. We also made sure to get the power of the piston from the back of the robot at a low enough angle for a maximum push. After planning the rough placements for the components, the next step was to build the model using SolidWorks. In my team, I was the only one who had completed a class on how to use the program so I taught and led my other teammates on how to use SolidWorks. I was also responsible for simulating the steering and propulsion as seen below.</p>
+								<p style="text-align: center;">
+									<img src="images/Engineering Projects/5/Slide1.png" width="45%" height="auto">
+									<video width="45%" height="auto" controls autoplay loop muted>
+										<source src="images/Engineering Projects/5/Servo Motion Study.mp4" type="video/mp4">
+									</video><br>
+
+									<img src="images/Engineering Projects/5/Slide2.png" width="45%" height="auto">
+									<video width="45%" height="auto" controls autoplay loop muted>
+										<source src="images/Engineering Projects/5/Propulsion Motion Study.mp4" type="video/mp4">
+									</video><br>
+
+									<img src="images/Engineering Projects/5/Slide3.png" width="90%" height="auto"><br>
+									<img src="images/Engineering Projects/5/Slide4.png" width="90%" height="auto"><br>
+
+									<a href="images/Engineering Projects/5/RobotDesign.pdf" target="_blank">CAD Model Presentation</a><br>
+									<iframe src="images/Engineering Projects/5/RobotDesign.pdf" #toolbar=0 width="40%" height="100%"></iframe>
+								</p>
+
+							<p style="text-align: justify">Following the presentation of modeling the robot, I was tasked to present 3 simulations of open-loop, closed-loop, and hybrid control types. These were run using a pre-programmed Matlab code given by my professor and I had added my parameters for my results. The last two slides were dedicated to my test on the effect, if any, the magnetometers had on closed-loop control.</p>
+								<p style="text-align: center">
+									<a href="images/Engineering Projects/5/ControllerDesign.pdf" target="_blank">Controller Design Simulation for Robot</a><br>
+									<iframe src="images/Engineering Projects/5/ControllerDesign.pdf" #toolbar=0 width="40%" height="100%"></iframe>
+								</p>
+
+							<p style="text-align: justify">Finally, the last section of the course was dedicated to building and debugging my controller to compete against my classmates in Agar.io. Like the previous assignment, I was given a Matlab code from my professor to start circling the mouse. The next step was to code an Arduino code that connected my mouse to my controller. When creating my controller I wanted to make sure that (a) I could seamlessly change direction (b) the mouse can accommodate the starter Agar.io size as well as when I grow and (c) quickly stop and start again to evade my peers. For my final design, I had made the left potentiometer control the piston and the right potentiometer control the steering angle. I added a flag to indicate where the 0 point is on the steering angle so when I turn it left and right I can counter the angle to straighten it out when needed. This allowed me to change direction however not as seamless as I wanted as I would get stuck in a circle or not be able to turn in the opposite direction as quickly as I needed to. However, the piston potentiometer was scaled to a 0 to 1 range and as I increased the pressure to 1, the radius that my mouse took would increase and let me go faster as well as make sure my mouse can still reach the outside diameter of my Agar.io circle. This 0 to 1 range also helped me turn off and on my mouse movement and was successfully conserving the piston in the competition.</p>
+								<p style="text-align: center;">
+									<video width="28%" height="auto" controls autoplay loop muted>
+										<source src="images/Engineering Projects/5/AgarioShow.mp4" type="video/mp4">
+									</video>
+									<img src="images/Engineering Projects/5/Site.png" width="50%" height="auto">
+
+									<img src="images/Engineering Projects/5/Build.png" width="78%" height="auto"><br>
+
+									<a href="images/Engineering Projects/5/MatlabCode.pdf" target="_blank">Matlab Code</a><br>
+									<iframe src="images/Engineering Projects/5/MatlabCode.pdf" #toolbar=0 width="40%" height="100%"></iframe><br>
+
+									<a href="images/Engineering Projects/5/ArduinoCode.pdf" target="_blank">Arduino Code</a><br>
+									<iframe src="images/Engineering Projects/5/ArduinoCode.pdf" #toolbar=0 width="40%" height="100%"></iframe><br>
+
+									<a href="images/Engineering Projects/5/Final.pdf" target="_blank">Final Report</a><br>
+									<iframe src="images/Engineering Projects/5/Final.pdf" #toolbar=0 width="40%" height="100%"></iframe>
+								</p>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in Touch</h2>
+								<ul class="icons">
+									<li><a href="tel: 916-521-3040" class="fas fa-mobile-alt"></a></li>
+									
+									<li><a href="mailto: kplawsonofficial@gmail.com" class="far fa-envelope"></a></li>
+									
+									
+									<li><a href="http://www.linkedin.com/in/kelsey-lawson-b30931166" class="fab fa-linkedin-in" target="_blank"></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Kelsey Lawson. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
