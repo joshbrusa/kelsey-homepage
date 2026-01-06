@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
+@import url("https://fonts.googleapis.com/css?family=Cormorant Garamond");
 @import url("fontawesome-all.min.css");
 
 /*
@@ -1325,7 +1325,7 @@ input, select, textarea {
 		}
 
 	body, input, textarea, select {
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'Cormorant Garamond';
 		font-weight: 300;
 		color: #777777;
 		font-size: 20pt;
@@ -2146,6 +2146,7 @@ input, select, textarea {
 		color: rgba(255, 255, 255, 0.45);
 		text-align: center;
 		padding: 2em 0 0 0;
+		font-family: 'Cormorant Garamond';
 		font-size: 0.75em;
 	}
 
